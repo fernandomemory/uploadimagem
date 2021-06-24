@@ -2,6 +2,11 @@ const express = require("express");
 const app = express();
 const db = require("./src/models");
 const initRoutes = require("./src/routes/web");
+const cors = require('cors')
+
+app.use(cors());
+app.options('*', cors());
+
 
 global.__basedir = __dirname;
 
@@ -15,5 +20,5 @@ initRoutes(app);
 
 let port = 3001;
 app.listen(port, () => {
-  console.log(`Running at localhost:${port}`);
+  console.log(`Rodando em :${port}`);
 });
