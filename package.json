@@ -1,0 +1,25 @@
+{
+  "name": "Upload",
+  "version": "1.0.0",
+  "description": "dê npm install e rode npm serve",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "upload",
+    "image",
+    "mysql"
+  ],
+  "author": "Fernando",
+  "license": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.7",
+    "sequelize": "^5.21.7"
+  }
+}
